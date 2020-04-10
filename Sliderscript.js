@@ -1,17 +1,14 @@
 const Scene = require('Scene');
 const NativeUI = require('NativeUI');
 const Patches = require('Patches');
-const TouchGestures = require('TouchGestures');
 
-var val = 0;
-const slider = NativeUI.slider;
-slider.value.monitor({fireOnInitialValue:false}).subscribe((mod)=>{
-  val = mod.newvaLue;
-});
+// Cria o Slider na cena
+var slider = NativeUI.slider;
 
-slider.value = 0.1;
+// Faz o slider ficar visivel
 slider.visible = true;
 
+// Quando o slider é usado ele passa o valor para o Patch Editor
 slider.value.monitor().subscribe(function(val) {
-  Patches.setScalarValue("Slider", val.newValue);
+    Patches.setScalarValue("Slider", val.newValue);
 });
