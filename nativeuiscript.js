@@ -45,4 +45,4 @@ const Picker = {
   },
 };
 
-Picker.init([Textures.findUsingPattern('0*')]);
+Picker.init([Textures.findUsingPattern('botao*')]);
