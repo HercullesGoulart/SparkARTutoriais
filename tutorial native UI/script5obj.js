@@ -11,17 +11,14 @@ const configuration = {
     {image_texture: Textures.get('botao0')},
 {image_texture: Textures.get('botao1')},
 {image_texture: Textures.get('botao2')},
-{image_texture: Textures.get('botao3')},
-{image_texture: Textures.get('botao4')},
+
     
   ],
   mats: [
     {material: Materials.get("material0")},
 {material: Materials.get("material1")},
 {material: Materials.get("material2")},
-{material: Materials.get("material3")},
-{material: Materials.get("material4")},
-   
+
   ]
 };
 const picker = NativeUI.picker;
